@@ -10,7 +10,7 @@ export default function SideNav(props) {
 
     const taskCompletedStyle = taskData.currentPage !== '/task-completed' ? 'nav-link' : 'active';
     const taskInProgressStyle = taskData.currentPage !== '/task-inprogress' ? 'nav-link' : 'active';
-    const taskAddedStyle = taskData.currentPage !== '/task-add' || '/' ? 'nav-link' : 'active';
+    const taskAddedStyle = (taskData.currentPage !== '/task-add') && (taskData.currentPage !== '/')  ? 'nav-link' : 'active';
    
     return (
         <div class="todolist-sidebar">
@@ -28,7 +28,7 @@ export default function SideNav(props) {
 					</NavLink>
 					<NavLink to = '/task-completed' className = 'nav-link' activeClassName = 'current-page'  exact = {true}>
 						<li>
-                        <div className= {taskCompletedStyle}><i class="fa fa-tasks" aria-hidden="true"></i> Completed Tasks</div>
+                        	<div className= {taskCompletedStyle}><i class="fa fa-tasks" aria-hidden="true"></i> Completed Tasks</div>
 							
 						</li>
 					</NavLink>
