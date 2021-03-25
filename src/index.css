@@ -1,0 +1,230 @@
+/* General */
+ 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}   
+
+body{
+     font-family: 'Roboto';
+     line-height: 1.7;
+   }
+ 
+   ul{
+     list-style: none;
+   }
+ 
+   .todolist-wrapper{
+     display: grid;
+     grid-template-columns: 2fr 5fr;
+     width: 60%;
+     height: 90%;
+     margin: auto;
+   }
+
+   .todolist-wrapper .todolist-sidebar{
+     background-color: #111332;
+     color: #414262;
+	 padding: 2rem;
+   }
+
+   .todolist-wrapper .todolist-content{
+     background-color: #0F112B;
+     color: #414262;
+	 
+   }
+
+   .todolist-wrapper .todolist-sidebar .menu .nav-link{
+		 
+		font-size: .8rem;
+		transition: .3s all ease-in-out;
+		color: #414262;
+		text-decoration: none;
+		
+   }
+ 
+   .todolist-wrapper .todolist-sidebar .menu .nav-link:hover{
+	cursor: pointer;
+	color: #D79FAC;
+   }
+
+   .todolist-wrapper .todolist-sidebar .menu .nav-link li {
+	   padding: .5rem 0;
+   }
+ 
+   .todolist-wrapper .todolist-sidebar .menu-title{
+	   font-size: 1rem;
+	   margin-bottom: .5rem;
+   }
+
+   .todolist-wrapper .todolist-sidebar .menu .nav-link li i{
+		margin-right: .3rem;
+	}
+ 
+   .todolist-content .todolist-lists{
+	padding: .5rem 2rem;
+   }
+
+   .todolist-lists .todolist-item {
+	   display: grid;
+	   grid-template-columns: 5fr 2fr;
+	   justify-content: space-between;
+	   align-items: center;
+	   background-color: #494B71;
+	   color: #fff;
+	   padding: 1rem;
+	   font-size: .7rem;
+	   border-radius: 10px;
+	   gap: 2rem;
+	   margin-bottom: 1.4rem;
+   }
+ 
+   .todolist-lists .todolist-item .item-edit i{
+	   background-color: #7476A5;
+	   padding: .6rem .6rem;
+	   border-radius: 20px;
+	   margin-right: .5rem;
+	   transition: .3s ease-in-out all;
+   }
+
+   .todolist-lists .todolist-item .item-edit i:hover{
+		color: #33334D;
+		cursor: pointer;
+   }
+
+   .todolist-lists .todolist-item .item-edit i:first-child{
+	padding: .6rem .6rem;
+   }
+
+   .todolist-lists .todolist-item .item-edit i:last-child{
+	padding: .6rem .8rem;
+   }
+
+
+   .todolist-content nav{
+	   padding: .5rem 2rem;
+	   text-align: right;
+	   color: #494B71;
+	  
+   }
+
+   .todolist-content nav i{
+		transition: .3s all ease-in-out;
+   }
+
+   .todolist-content nav i:hover{
+	   color: #fff;
+	   cursor: pointer;
+   }
+
+   .todolist-content .todolist-add{
+	   padding: .5rem 2rem 2rem 2rem;
+   }
+
+   
+   .todolist-content .todolist-add textarea{
+		width: 100%;
+		outline: none;
+		padding: 1rem;
+		background-color: #494B71;
+		border: none;
+		color: #fff;
+   }
+
+   .todolist-content .todolist-add .btn-save-task{
+	   border: none;
+	   outline: none;
+	   background-color: transparent;
+	   color: #fff;
+	   padding: .5rem 1rem;
+	   border: 2px #fff solid;
+	   display: inline-block;
+	   text-align: right;
+	   transition: ease-in-out .3s all;
+	   margin-top: 1rem;
+	   text-align: right;
+   }
+
+   .todolist-content .todolist-add .btn-save-task:hover{	 
+	background-color: #3E4262;
+	cursor: pointer;
+}
+
+.todolist-content .todolist-add .btn-wrapper{
+	text-align: right;
+}
+
+.todolist-content nav.todo-lists{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.3rem 2rem 1rem 2rem;
+}
+
+.todolist-content nav.todo-lists .search-wrapper{
+	position: relative;
+}
+
+.todolist-content nav.todo-lists .search-wrapper i{
+	position: absolute;
+	left: 8px;
+	top: 9px;
+}
+
+.todolist-content nav .search-wrapper input{
+	padding: .5rem .5rem .5rem 2.5rem;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #494B71;
+}
+
+.todolist-content nav .search-wrapper input::placeholder{
+	color: #494B71;
+}
+
+
+.todolist-lists .todolist-item .completed-task{
+	color: #9B9DBD !important ;
+}
+
+.todolist-lists .todolist-item .edit-task-input{
+	background-color: #3A3D5A;
+
+	color: #fff;
+	padding: .5rem 1rem;
+	border: none;
+	outline: none;
+}
+
+.todolist-add .error-task{
+	font-size: .7rem;
+	color: #AB4B62;
+
+}
+
+.no-tasks{
+	text-align: center;
+	margin-top: 1.2rem;
+	font-size: 1.8rem;
+}
+
+
+.active{	 	 
+	color: #AB4B62;		  
+}
+ 
+.todolist-item .item-postedDate{
+	font-style: italic;
+	color: #ADAECB;
+
+}
+
+
+.todolist-item .item-task{
+	 
+	font-size: .8rem !important;
+	font-weight: normal;
+	
+}
